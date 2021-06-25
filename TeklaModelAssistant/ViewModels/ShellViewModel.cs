@@ -10,7 +10,7 @@ namespace TeklaModelAssistant.ViewModels
     class ShellViewModel : Conductor<object>
     {
 
-
+       
 
     }
 }
