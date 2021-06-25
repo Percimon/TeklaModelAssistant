@@ -40,6 +40,10 @@ namespace TeklaModelAssistant.Services
                         TeklaModelObject = modelObjectEnumerator.Current
                     }); ;
                 }
+                else
+                {
+                    eventAggregator.PublishOnUIThreadAsync(new TeklaModelObjectProvider()); ;
+                }
             }
         }
     }

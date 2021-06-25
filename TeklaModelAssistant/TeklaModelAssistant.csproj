@@ -118,7 +118,11 @@
     </Compile>
     <Compile Include="Infrastructure\TeklaModelObjectProvider.cs" />
     <Compile Include="Services\TeklaEventHandler.cs" />
+    <Compile Include="ViewModels\ObjectDataViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="Views\ObjectDataView.xaml.cs">
+      <DependentUpon>ObjectDataView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
     </Compile>
@@ -152,6 +156,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views\ObjectDataView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ShellView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
