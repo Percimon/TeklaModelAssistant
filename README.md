@@ -1,3 +1,3 @@
 ### Tekla model assistant
-Allows to:
-* modify objects in Tekla Structures model;
+Provide following tools for Tekla Structures model:
+* modify objects' attributes;
