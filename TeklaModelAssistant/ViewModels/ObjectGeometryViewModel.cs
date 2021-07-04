@@ -12,10 +12,11 @@ namespace TeklaModelAssistant.ViewModels
 {
     class ObjectGeometryViewModel : Conductor<object>, IHandle<TeklaModelObjectProvider>
     {
-
+        private IEventAggregator eventAggregator;
         public ObjectGeometryViewModel(IEventAggregator events)
         {
-            events.SubscribeOnUIThread(this);
+            eventAggregator = events;
+            eventAggregator.SubscribeOnUIThread(this);
         }
 
         public System.Threading.Tasks.Task HandleAsync(TeklaModelObjectProvider message, CancellationToken cancellationToken)

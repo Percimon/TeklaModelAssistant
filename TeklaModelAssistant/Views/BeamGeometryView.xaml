@@ -6,7 +6,22 @@
              xmlns:local="clr-namespace:TeklaModelAssistant.Views"
              mc:Ignorable="d" 
              Background="Red">
-    <Grid>
-            
-    </Grid>
+    <StackPanel Orientation="Vertical">
+        <StackPanel.Resources>
+            <Style TargetType="StackPanel">
+                <Setter Property="Orientation" Value="Horizontal"/>
+            </Style>
+            <Style TargetType="TextBlock">
+                <Setter Property="Width" Value="100"/>
+            </Style>
+            <Style TargetType="TextBox">
+                <Setter Property="Width" Value="100"/>
+            </Style>
+        </StackPanel.Resources>
+        <StackPanel>
+            <TextBlock Text="Start point X"/>
+            <TextBox x:Name="StartPoint_X"/>
+        </StackPanel>
+        <Button x:Name="UpdateCoordinates" Content="Update coordinates"/>
+    </StackPanel>
 </UserControl>

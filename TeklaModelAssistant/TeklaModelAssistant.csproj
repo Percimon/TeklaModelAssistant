@@ -118,6 +118,7 @@
     </Compile>
     <Compile Include="Infrastructure\TeklaModelObjectProvider.cs" />
     <Compile Include="Models\PartWrapper.cs" />
+    <Compile Include="Models\TeklaPointWrapper.cs" />
     <Compile Include="Services\TeklaEventHandler.cs" />
     <Compile Include="ViewModels\BeamGeometryViewModel.cs" />
     <Compile Include="ViewModels\ContourPlateGeometryViewModel.cs" />
