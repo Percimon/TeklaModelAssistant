@@ -119,22 +119,38 @@
     <Compile Include="Infrastructure\TeklaModelObjectProvider.cs" />
     <Compile Include="Models\PartWrapper.cs" />
     <Compile Include="Services\TeklaEventHandler.cs" />
+    <Compile Include="ViewModels\BeamGeometryViewModel.cs" />
+    <Compile Include="ViewModels\ContourPlateGeometryViewModel.cs" />
     <Compile Include="ViewModels\ObjectAttributesViewModel.cs" />
     <Compile Include="ViewModels\ObjectDataViewModel.cs" />
+    <Compile Include="ViewModels\ObjectGeometryViewModel.cs" />
     <Compile Include="ViewModels\ObjectIdentificationViewModel.cs" />
     <Compile Include="ViewModels\PartAttributesViewModel.cs" />
+    <Compile Include="ViewModels\PolybeamGeometryViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="Views\BeamGeometryView.xaml.cs">
+      <DependentUpon>BeamGeometryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ContourPlateGeometryView.xaml.cs">
+      <DependentUpon>ContourPlateGeometryView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ObjectAttributesView.xaml.cs">
       <DependentUpon>ObjectAttributesView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ObjectDataView.xaml.cs">
       <DependentUpon>ObjectDataView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ObjectGeometryView.xaml.cs">
+      <DependentUpon>ObjectGeometryView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ObjectIdentificationView.xaml.cs">
       <DependentUpon>ObjectIdentificationView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\PartAttributesView.xaml.cs">
       <DependentUpon>PartAttributesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PolybeamGeometryView.xaml.cs">
+      <DependentUpon>PolybeamGeometryView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
@@ -169,6 +185,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views\BeamGeometryView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ContourPlateGeometryView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ObjectAttributesView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -177,11 +201,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\ObjectGeometryView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ObjectIdentificationView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\PartAttributesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PolybeamGeometryView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

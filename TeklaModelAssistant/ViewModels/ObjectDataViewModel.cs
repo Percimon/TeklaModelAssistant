@@ -15,12 +15,14 @@ namespace TeklaModelAssistant.ViewModels
         private IEventAggregator eventAggregator;
         public ObjectIdentificationViewModel ObjectIdentificationViewModel { get; set; }
         public ObjectAttributesViewModel ObjectAttributesViewModel { get; set; }
+        public ObjectGeometryViewModel ObjectGeometryViewModel { get; set; }
 
         public ObjectDataViewModel(IEventAggregator eventAggregator)
         {
             this.eventAggregator = eventAggregator;
             ObjectIdentificationViewModel = new ObjectIdentificationViewModel(eventAggregator);
             ObjectAttributesViewModel = new ObjectAttributesViewModel(eventAggregator);
+            ObjectGeometryViewModel = new ObjectGeometryViewModel(eventAggregator);
         }
     }
 }
