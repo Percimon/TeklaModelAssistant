@@ -5,8 +5,17 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TeklaModelAssistant.Views"
              mc:Ignorable="d" 
-             Background="Blue">
-    <Grid>
-            
-    </Grid>
+             >
+    <StackPanel>
+
+        <DataGrid x:Name="Points" AutoGenerateColumns="False" CanUserAddRows="False" AlternatingRowBackground="Gray" AlternationCount="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="X" Binding="{Binding X}"/>
+                <DataGridTextColumn Header="Y" Binding="{Binding Y}"/>
+                <DataGridTextColumn Header="Z" Binding="{Binding Z}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button x:Name="UpdateCoordinates" Content="Update coodrdinates"/>
+    </StackPanel>
 </UserControl>

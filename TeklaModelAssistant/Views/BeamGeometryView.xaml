@@ -4,8 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TeklaModelAssistant.Views"
-             mc:Ignorable="d" 
-             Background="Red">
+             mc:Ignorable="d" >
     <StackPanel Orientation="Vertical">
         <StackPanel.Resources>
             <Style TargetType="StackPanel">
@@ -18,9 +17,31 @@
                 <Setter Property="Width" Value="100"/>
             </Style>
         </StackPanel.Resources>
+        <TextBlock Text="START POINT"/>
         <StackPanel>
-            <TextBlock Text="Start point X"/>
+            <TextBlock Text="X"/>
             <TextBox x:Name="StartPoint_X"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="Y"/>
+            <TextBox x:Name="StartPoint_Y"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="Z"/>
+            <TextBox x:Name="StartPoint_Z"/>
+        </StackPanel>
+        <TextBlock Text="END POINT"/>
+        <StackPanel>
+            <TextBlock Text="X"/>
+            <TextBox x:Name="EndPoint_X"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="Y"/>
+            <TextBox x:Name="EndPoint_Y"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="Z"/>
+            <TextBox x:Name="EndPoint_Z"/>
         </StackPanel>
         <Button x:Name="UpdateCoordinates" Content="Update coordinates"/>
     </StackPanel>

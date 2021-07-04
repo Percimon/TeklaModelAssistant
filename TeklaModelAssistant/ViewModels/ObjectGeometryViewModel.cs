@@ -38,6 +38,11 @@ namespace TeklaModelAssistant.ViewModels
                         ActivateItemAsync(new ContourPlateGeometryViewModel(cPlate));
                         break;
                     }
+                default:
+                    {
+                        ActivateItemAsync(null);
+                        break;
+                    }
             }
             return System.Threading.Tasks.Task.CompletedTask;
         }
