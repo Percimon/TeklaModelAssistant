@@ -21,5 +21,17 @@
             <TextBlock Text="Name"/>
             <TextBox x:Name="Name"/>
         </StackPanel>
+        <StackPanel>
+            <TextBlock Text="Class"/>
+            <TextBox x:Name="Class"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="Profile"/>
+            <TextBox x:Name="Profile"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="Material"/>
+            <TextBox x:Name="Material"/>
+        </StackPanel>
     </StackPanel>
 </UserControl>

@@ -6,6 +6,5 @@
              xmlns:local="clr-namespace:TeklaModelAssistant.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <ContentControl x:Name="ActiveItem">
-    </ContentControl>
+    <ContentControl x:Name="ActiveItem"/>
 </UserControl>
