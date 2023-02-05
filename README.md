@@ -1,3 +1,4 @@
 ### Tekla model assistant
-Provide following tools for Tekla Structures (BIM software):
-* modify model objects' attributes and geometry;
+Provides tools for easier editing of model objects in Tekla Structures:
+
+https://www.youtube.com/watch?v=ETJ8Vv4xI-Q&list=PL4yrXMsEUu__D9p_bS7-wLaQcfP0fFvXp
